@@ -4,6 +4,7 @@ This is a simple Guestbook example. It demonstrates...
  - A few of Spring 3.1's Java configuration enhancements, such as
    @EnableTransactionManagement, @EnableWebMvc, and @ComponentScan
  - Very basic Spring MVC
+ - Testing Spring MVC using the spring-test-mvc mock support.
 
 With regard to being XML-free, note the following:
 
