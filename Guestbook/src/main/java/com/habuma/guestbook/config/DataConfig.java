@@ -31,7 +31,6 @@ public class DataConfig {
 	public DataSource prodDataSource() {
 		return null;
 	}
-
 	
 	@Bean
 	public JdbcTemplate jdbcTemplate() {
