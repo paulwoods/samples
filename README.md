@@ -1,3 +1,6 @@
+The Habuma Sample Code Emporium
+===============================
+
 This repository is where I plan to drop all of my example code from articles,
 presentations, and books going forward. Some projects may be small focused 
 samples to demonstrate a particular concept and others may be fully-baked
