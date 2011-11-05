@@ -1,5 +1,5 @@
-The Habuma Sample Code Emporium
-===============================
+The Habuma Sample Code Exhibition
+=================================
 
 This repository is where I plan to drop all of my example code from articles,
 presentations, and books going forward. Some projects may be small focused 
