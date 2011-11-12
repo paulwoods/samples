@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<bean id="album1" class="com.habuma.spring31.CompactDisc" 
+		c:title = "Rattle and Hum" 
+		c:artist = "U2" />
+
+	<beans profile="hardRock">
+		<bean id="album2" class="com.habuma.spring31.CompactDisc"
+			c:_0 = "Slippery When Wet"
+			c:_1 = "Bon Jovi" />
+			
+		<bean id="album3" class="com.habuma.spring31.CompactDisc"
+			c:_1 = "Van Halen"
+			c:_0 = "1984" />
+	</beans>
+
+	<beans profile="softRock">
+		<bean id="album2" class="com.habuma.spring31.CompactDisc"
+			c:_0 = "Suddenly"
+			c:_1 = "Billy Ocean" />
+			
+		<bean id="album3" class="com.habuma.spring31.CompactDisc"
+			c:_0 = "Can't Slow Down"
+			c:_1 = "Lionel Richie" />
+	</beans>
+	
+	<beans profile="oldSchool">
+		<bean id="album2" class="com.habuma.spring31.EightTrack"
+			c:_0 = "Hotel California"
+			c:_1 = "Eagles" />
+			
+		<bean id="album3" class="com.habuma.spring31.EightTrack"
+			c:_0 = "Leftoverture"
+			c:_1 = "Kansas" />
+	</beans>	
+</beans>

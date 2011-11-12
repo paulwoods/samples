@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xmlns:c="http://www.springframework.org/schema/c"
+				xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<bean id="disc1" class="com.habuma.spring31.CompactDisc" 
+		c:title = "Rattle and Hum" 
+		c:artist = "U2" />
+
+	<bean id="disc2" class="com.habuma.spring31.CompactDisc"
+		c:_0 = "Slippery When Wet"
+		c:_1 = "Bon Jovi" />
+		
+	<bean id="disc3" class="com.habuma.spring31.CompactDisc"
+		c:_1 = "Van Halen"
+		c:_0 = "1984" />
+		
+	<bean id="disc4" class="com.habuma.spring31.CompilationDisc"
+		c:_ = "Hot Tracks" />
+
+	<bean id="headphones" class="com.habuma.spring31.Headphones" />
+	<bean id="speakers" class="com.habuma.spring31.Speakers" />
+
+	<bean id="player1" class="com.habuma.spring31.CDPlayer"
+		c:disc-ref = "disc1"
+		c:output-ref = "headphones" />
+		
+	<bean id="player2" class="com.habuma.spring31.CDPlayer"
+		c:_0-ref = "disc2"
+		c:_1-ref = "speakers" />
+		
+	<bean id="radio" class="com.habuma.spring31.Radio"
+		c:_-ref = "speakers" />
+</beans>
